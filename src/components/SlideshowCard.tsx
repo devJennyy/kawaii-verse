@@ -5,7 +5,7 @@ const SlideshowCard = () => {
         <div className="flex flex-col mt-5 ">
           <div className="flex flex-1 justify-center items-center max-w-[413px]">
             <img
-              src="/images/anime-cover-photo.jpg"
+              src="/images/anime-slides-cover.jpg"
               className="w-full h-[272px] object-cover rounded-lg"
             />
           </div>

@@ -17,6 +17,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -54,5 +55,7 @@ html, body {
   background-image: linear-gradient(to left, #FD1C68, #FDAE8F);
   border-radius: 9999px;
 }
+
+
 
 
