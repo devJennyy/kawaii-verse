@@ -3,6 +3,7 @@ import "./App.css";
 import { Route, Routes, BrowserRouter as Router, Navigate, Link} from "react-router-dom";
 import Anime from "./Pages/Anime";
 import Homepage from "./Pages/Homepage";
+import Manga from "./Pages/Manga";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
             <div className="flex text-[16px] font-normal gap-6 menu-items">
               <Link to={"/homepage"}>Explore</Link>
               <Link to={"/anime"}>Anime</Link>
-              <a href="#manga">Manga</a>
+              <Link to={"/manga"}>Manga</Link>
               <a href="#browse">Browse</a>
               <a href="#toplists">Top Lists</a>
             </div>
@@ -52,6 +53,7 @@ function App() {
             <Route path="/" element={<Navigate to="/homepage" replace />} />
             <Route path="/homepage" element={<Homepage />} />
             <Route path="/anime" element={<Anime />} />
+            <Route path="/manga" element={<Manga/>} />
           </Routes>
         </div>
 
