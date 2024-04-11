@@ -12,7 +12,7 @@ const MangaCard = () => {
         </div>
 
         <div className="flex flex-col w-full mt-4">
-          <div className="flex flex-row justify-center items-center gap-[6px]">
+          <div className="flex flex-row justify-center items-center gap-[6px] overflow-hidden max-w-[246px]">
             <div className="flex justify-center items-center min-w-[78px] h-5 bg-[#E9E9E9]/10 rounded-md">
               <p className="text-[11px] font-light truncate pl-2 pr-2">
                 Action
@@ -24,7 +24,7 @@ const MangaCard = () => {
               </p>
             </div>
             <div className="flex justify-center items-center min-w-[78px] h-5 bg-[#E9E9E9]/10 rounded-md">
-              <p className="text-[11px] font-light truncate pl-2 pr-2">
+              <p className="text-[11px] font-light w-[78px] truncate pl-2 pr-2">
                 Fantasy
               </p>
             </div>
@@ -44,7 +44,7 @@ const MangaCard = () => {
             <p>1 month ago</p>
             <div className="flex flex-row justify-center items-center gap-1">
               <p>More details</p>
-              <MdOutlineKeyboardArrowRight size={13}/>
+              <MdOutlineKeyboardArrowRight size={13} />
             </div>
           </div>
         </div>

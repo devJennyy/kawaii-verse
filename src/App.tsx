@@ -31,7 +31,7 @@ function App() {
             </div>
 
             <div className="flex flex-row justify-end items-center flex-1">
-              <div className="flex flex-row justify-end items-center flex-1 max-w-[450px] relative">
+              <div className="flex flex-row justify-end items-center flex-1 max-w-[432px] relative">
                 <input
                   placeholder="Search anime..."
                   className="w-full h-12 bg-[#09090B] border border-[#27272A] rounded-md pl-5 pr-12"
@@ -60,9 +60,9 @@ function App() {
           <div className="border-b border-[#151518]"></div>
           <div className="flex flex-col justify-center items-center text-[12px] text-[#CCD6F6] font-light w-full pt-12">
             <p>Designed & Built by Jenny Pieloor</p>
-            <p>2024</p>
+            <p>Powered by Jikan API 2024</p>
           </div>
-        </div> 
+        </div>  
       </div>
     </Router>
   );

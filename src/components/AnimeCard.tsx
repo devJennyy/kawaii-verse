@@ -1,6 +1,6 @@
 const AnimeCard = () => {
   return (
-    <div className="flex flex-col justify-center items-start min-w-[278px] h-[405px] bg-[#373737]/10 rounded-lg active:scale-95 transition-all">
+    <div className="flex flex-col justify-center items-start w-[278px] h-[405px] bg-[#373737]/10 rounded-lg active:scale-95 transition-all">
       <div className="flex justify-center items-center w-full mb-3">
         <img
           src="/images/anime-list-cover.png"
@@ -16,29 +16,25 @@ const AnimeCard = () => {
       </div>
 
       <div className="flex flex-col justify-start items-start max-w-[278px] px-4 truncate gap-3">
-        <div className="flex flex-row justify-between items-center text-[12px] font-normal w-full">
-          <div>
-            <p>Season 1</p>
-          </div>
-          <div className="w-[5px] h-[5px] bg-[#343333] rounded-full"></div>
-          <div>
-            <p>24 Episodes</p>
-          </div>
-          <div className="w-[5px] h-[5px] bg-[#343333] rounded-full"></div>
-          <div>
-            <p className="">24 Minutes</p>
-          </div>
+        <div className="flex flex-row justify-start items-center text-[12px] font-normal max-w-full gap-3 overflow-hidden line-clamp-2">
+          <p>Season 1</p>
+          <div className="min-w-[5px] h-[5px] bg-[#343333] rounded-full"></div>
+          <p>24 Episodes</p>
+          <div className="min-w-[5px] h-[5px] bg-[#343333] rounded-full"></div>
+          <p className="w-[78px] truncate">24 Minutes</p>
         </div>
 
         <div className="flex flex-row justify-center items-center gap-[6px]">
-          <div className="flex justify-center items-center w-[78px] h-5 bg-[#E9E9E9]/10 rounded-md">
-            <p className="text-[11px] font-light">Action</p>
+          <div className="flex justify-center items-center min-w-[78px] h-5 bg-[#E9E9E9]/10 rounded-md">
+            <p className="text-[11px] font-light truncate pl-2 pr-2">Action</p>
           </div>
-          <div className="flex justify-center items-center w-[78px] h-5 bg-[#E9E9E9]/10 rounded-md">
-            <p className="text-[11px] font-light">Adventure</p>
+          <div className="flex justify-center items-center min-w-[78px] h-5 bg-[#E9E9E9]/10 rounded-md">
+            <p className="text-[11px] font-light truncate pl-2 pr-2">
+              Adventure
+            </p>
           </div>
-          <div className="flex justify-center items-center w-[78px] h-5 bg-[#E9E9E9]/10 rounded-md">
-            <p className="text-[11px] font-light">Fantasy</p>
+          <div className="flex justify-center items-center min-w-[78px] h-5 bg-[#E9E9E9]/10 rounded-md">
+            <p className="text-[11px] font-light truncate pl-2 pr-2">Fantasy</p>
           </div>
         </div>
       </div>
