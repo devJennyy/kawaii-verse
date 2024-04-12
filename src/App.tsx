@@ -4,6 +4,7 @@ import { Route, Routes, BrowserRouter as Router, Navigate, Link} from "react-rou
 import Anime from "./Pages/Anime";
 import Homepage from "./Pages/Homepage";
 import Manga from "./Pages/Manga";
+import Browse from "./Pages/Browse";
 
 function App() {
   return (
@@ -27,8 +28,7 @@ function App() {
               <Link to={"/homepage"}>Explore</Link>
               <Link to={"/anime"}>Anime</Link>
               <Link to={"/manga"}>Manga</Link>
-              <a href="#browse">Browse</a>
-              <a href="#toplists">Top Lists</a>
+              <Link to={"/browse"}>Browse</Link>
             </div>
 
             <div className="flex flex-row justify-end items-center flex-1">
@@ -54,6 +54,7 @@ function App() {
             <Route path="/homepage" element={<Homepage />} />
             <Route path="/anime" element={<Anime />} />
             <Route path="/manga" element={<Manga/>} />
+            <Route path="/browse" element={<Browse/>} />
           </Routes>
         </div>
 
