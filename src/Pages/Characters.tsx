@@ -1,6 +1,6 @@
-import CharactersCard from "../components/CharactersCard";
+import CharactersCard from "@/components/CharactersCard";
 
-const Browse = () => {
+const Characters = () => {
   return (
     // Main Container
     <div className="w-full h-[120vh] bg-[#09090B] pt-40 px-20 pb-40">
@@ -32,4 +32,4 @@ const Browse = () => {
   );
 };
 
-export default Browse;
+export default Characters;

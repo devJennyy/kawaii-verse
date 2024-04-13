@@ -1,23 +1,23 @@
-
 import AnimeCard from "../components/AnimeCard";
 import { useState } from "react";
 import MiniHeader from "../components/MiniHeader";
 import Filters from "../components/Filters";
+import AnimeListView from "@/components/AnimeListView";
 
 const Anime = () => {
   const [view, setView] = useState("grid");
 
   return (
     // Main Container
-    <div className="w-full h-[170vh] bg-[#09090B] pt-40 px-20 pb-40">
+    <div className="w-full h-[190vh] bg-[#09090B] pt-40 px-20 pb-40">
       {/* Mini Header */}
-      <MiniHeader/>
+      <MiniHeader title="Anime" view={view} setView={setView} />
 
       {/* Content */}
       <div className="w-full pt-10">
         {view == "grid" ? (
           <div>
-            <Filters/>
+            <Filters />
 
             {/* Anime List */}
             <div className="flex flex-col gap-12 mt-16">
@@ -53,7 +53,42 @@ const Anime = () => {
             </div>
           </div>
         ) : (
-          <div className="text-[50px]"> WORK IN PROGRESS! </div>
+          <div>
+            <Filters />
+            
+            {/* Anime List */}
+            <div className="flex flex-col mt-16">
+              <div className="flex flex-row justify-between gap-16">
+                <div className="flex flex-col gap-10 w-1/2">
+                  <p className="flex justify-start border-b border-[#151518] pb-4 text-[20px] font-semibold w-full">
+                    Last 24 Hours
+                  </p>
+
+                  <div className="flex flex-col gap-6">
+                    <AnimeListView />
+                    <AnimeListView />
+                    <AnimeListView />
+                    <AnimeListView />
+                    <AnimeListView />
+                  </div>
+                </div>
+
+                <div className="flex flex-col gap-10 w-1/2">
+                  <p className="flex justify-start border-b border-[#151518] pb-4 text-[20px] font-semibold w-full">
+                    This Past Week
+                  </p>
+
+                  <div className="flex flex-col gap-6">
+                    <AnimeListView />
+                    <AnimeListView />
+                    <AnimeListView />
+                    <AnimeListView />
+                    <AnimeListView />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         )}
       </div>
     </div>

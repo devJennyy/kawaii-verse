@@ -4,15 +4,15 @@ import { Route, Routes, BrowserRouter as Router, Navigate, Link} from "react-rou
 import Anime from "./Pages/Anime";
 import Homepage from "./Pages/Homepage";
 import Manga from "./Pages/Manga";
-import Browse from "./Pages/Browse";
+import Characters from "./Pages/Characters";
 
 function App() {
   return (
     <Router>
       {/* Main Container */}
-      <div className="w-full h-full bg-[#09090B] text-white">
+      <div className="w-full h-full flex flex-col bg-[#09090B] text-white">
         {/* Navbar */}
-        <div className="flex flex-row justify-between items-center w-full border-b border-[#151518] fixed top-0 backdrop-blur-md bg-[#09090B] z-50">
+        <div className="flex flex-row justify-between items-center w-screen border-b border-[#151518] fixed top-0 backdrop-blur-md bg-[#09090B] z-50">
           <div className="flex flex-row justify-start items-center w-full h-28 gap-20 px-20">
             <a href="#homepage" className="flex gap-4">
               <img
@@ -28,14 +28,14 @@ function App() {
               <Link to={"/homepage"}>Explore</Link>
               <Link to={"/anime"}>Anime</Link>
               <Link to={"/manga"}>Manga</Link>
-              <Link to={"/browse"}>Browse</Link>
+              <Link to={"/characters"}>Top Characters</Link>
             </div>
 
-            <div className="flex flex-row justify-end items-center flex-1">
-              <div className="flex flex-row justify-end items-center flex-1 max-w-[432px] relative">
+            <div className="flex flex-row justify-end items-center flex-1 mr-2">
+              <div className="flex flex-row justify-end items-center flex-1 max-w-[465px] relative">
                 <input
                   placeholder="Search anime..."
-                  className="w-full h-12 bg-[#09090B] border border-[#27272A] rounded-md pl-5 pr-12"
+                  className="w-full h-12 bg-[#09090B] border border-[#27272A] rounded-md pl-5 pr-12 text-[15px] outline-none focus:border-white"
                 />
                 <button className="absolute mr-5 cursor-pointer flex flex-1 max-w-5">
                   <FiSearch className="w-full h-5" />
@@ -54,7 +54,7 @@ function App() {
             <Route path="/homepage" element={<Homepage />} />
             <Route path="/anime" element={<Anime />} />
             <Route path="/manga" element={<Manga/>} />
-            <Route path="/browse" element={<Browse/>} />
+            <Route path="/characters" element={<Characters/>} />
           </Routes>
         </div>
 
