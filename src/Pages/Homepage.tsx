@@ -101,7 +101,7 @@ const Homepage = () => {
               </p>
             </div>
             <div className="border-b border-[#151518] w-full pt-2">
-              <div className="gradient-border-b"></div>
+              <div className="gradient-border-b bg-gradient-to-tr from-[#FD1C68] from-35% to-[#FDAE8F] to-80% w-14 h-[3px] rounded-sm"></div>
             </div>
           </div>
 

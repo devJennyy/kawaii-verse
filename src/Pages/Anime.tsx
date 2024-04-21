@@ -19,35 +19,31 @@ const Anime = () => {
           <div>
             <Filters />
 
-            {/* Anime List */}
+            {/* Anime Grid View */}
             <div className="flex flex-col gap-12 mt-16">
               <div className="flex flex-col gap-10">
                 <p className="flex justify-start border-b border-[#151518] w-full pb-4 text-[20px] font-semibold">
-                  Last 24 Hours
+                  Most Popular Anime
                 </p>
 
-                <div className="flex flex-row items-center gap-6 overflow-hidden">
-                  <AnimeCard />
-                  <AnimeCard />
-                  <AnimeCard />
-                  <AnimeCard />
-                  <AnimeCard />
-                  <AnimeCard />
-                </div>
-              </div>
+                <div className="flex flex-col gap-5">
+                  <div className="flex flex-row items-center gap-5 overflow-hidden">
+                    <AnimeCard />
+                    <AnimeCard />
+                    <AnimeCard />
+                    <AnimeCard />
+                    <AnimeCard />
+                    <AnimeCard />
+                  </div>
 
-              <div className="flex flex-col gap-10">
-                <p className="flex justify-start border-b border-[#151518] w-full mt-14 pb-4 text-[20px] font-semibold">
-                  This Past Week
-                </p>
-
-                <div className="flex flex-row items-center gap-6 overflow-hidden">
-                  <AnimeCard />
-                  <AnimeCard />
-                  <AnimeCard />
-                  <AnimeCard />
-                  <AnimeCard />
-                  <AnimeCard />
+                  <div className="flex flex-row items-center gap-5 overflow-hidden">
+                    <AnimeCard />
+                    <AnimeCard />
+                    <AnimeCard />
+                    <AnimeCard />
+                    <AnimeCard />
+                    <AnimeCard />
+                  </div>
                 </div>
               </div>
             </div>
@@ -55,8 +51,8 @@ const Anime = () => {
         ) : (
           <div>
             <Filters />
-            
-            {/* Anime List */}
+
+            {/* Anime List View */}
             <div className="flex flex-col mt-16">
               <div className="flex flex-row justify-between gap-16">
                 <div className="flex flex-col gap-10 w-1/2">

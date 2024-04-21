@@ -68,26 +68,29 @@ const MiniHeader: React.FC<Props> = ({ title, view, setView }) => {
                 <Select>
                   <SelectTrigger className="border-[#27272A] text-[14px]">
                     <SelectValue placeholder="Choose type" />
+                    <MdKeyboardArrowDown size={22} className="opacity-60"/>
                   </SelectTrigger>
                   <SelectContent>
                     <SelectGroup>
                       <div className="flex flex-row">
                         <div>
+                          <SelectItem value="all">All</SelectItem>
                           <SelectItem value="action">Action</SelectItem>
                           <SelectItem value="adventure">Adventure</SelectItem>
                           <SelectItem value="comedy">Comedy</SelectItem>
                           <SelectItem value="drama">Drama</SelectItem>
                           <SelectItem value="fantasy">Fantasy</SelectItem>
-                          <SelectItem value="slice-of-life">Slice of Life</SelectItem>
-                          <SelectItem value="sports">Sports</SelectItem>
+                          <SelectItem value="music">Music</SelectItem>
+                          <SelectItem value="romance">Romance</SelectItem>
                         </div>
 
                         <div>
-                          <SelectItem value="music">Music</SelectItem>
-                          <SelectItem value="romance">Romance</SelectItem>
                           <SelectItem value="sci-fi">Sci-Fi</SelectItem>
                           <SelectItem value="seinen">Seinen</SelectItem>
+                          <SelectItem value="slice-of-life">Slice of Life</SelectItem>
+                          <SelectItem value="shojo">Shojo</SelectItem>
                           <SelectItem value="shonen">Shonen</SelectItem>
+                          <SelectItem value="sports">Sports</SelectItem>
                           <SelectItem value="supernatural">Supernatural</SelectItem>
                           <SelectItem value="thriller">Thriller</SelectItem>
                         </div>
@@ -102,6 +105,7 @@ const MiniHeader: React.FC<Props> = ({ title, view, setView }) => {
                 <Select>
                   <SelectTrigger className="border-[#27272A] text-[14px]">
                     <SelectValue placeholder="Choose type" />
+                    <MdKeyboardArrowDown size={22} className="opacity-60"/>
                   </SelectTrigger>
                   <SelectContent>
                     <SelectGroup>
