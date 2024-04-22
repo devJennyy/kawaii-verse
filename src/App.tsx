@@ -69,7 +69,7 @@ function App() {
       </div>
 
       {/* Main Container */}
-      <div className="max-w-[1536px] mx-auto h-fit flex flex-col bg-[#09090B] text-white">
+      <div className="max-w-[1500px] mx-auto h-fit flex flex-col bg-[#09090B] text-white">
         <div className="w-full h-fit">
           <Routes>
             <Route path="/" element={<Navigate to="/homepage" replace />} />

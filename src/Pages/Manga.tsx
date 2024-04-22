@@ -9,7 +9,7 @@ const Manga = () => {
   const [view, setView] = useState("grid");
   return (
     // Main Container
-    <div className="w-full h-[170vh] bg-[#09090B] pt-40 px-20 pb-40">
+    <div className="w-full h-fit bg-[#09090B] pt-40 px-4">
       {/* Mini Header */}
       <MiniHeader title="Manga" view={view} setView={setView}/>
 
@@ -20,9 +20,9 @@ const Manga = () => {
             <Filters/>
 
             {/* Anime List */}
-            <div className="flex flex-col gap-12 mt-16">
+            <div className="flex flex-col gap-12 mt-20">
               <div className="flex flex-col gap-10">
-                <p className="flex justify-start border-b border-[#151518] w-full pb-4 text-[20px] font-semibold">
+                <p className="flex justify-start border-b border-[#151518]/10 w-full pb-4 text-[20px] font-semibold">
                   Last 24 Hours
                 </p>
 
@@ -37,7 +37,7 @@ const Manga = () => {
               </div>
 
               <div className="flex flex-col gap-10">
-                <p className="flex justify-start border-b border-[#151518] w-full mt-14 pb-4 text-[20px] font-semibold">
+                <p className="flex justify-start border-b border-[#151518]/10 w-full mt-14 pb-4 text-[20px] font-semibold">
                   This Past Week
                 </p>
 

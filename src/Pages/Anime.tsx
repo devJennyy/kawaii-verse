@@ -9,7 +9,7 @@ const Anime = () => {
 
   return (
     // Main Container
-    <div className="w-full h-[190vh] bg-[#09090B] pt-40 px-20 pb-40">
+    <div className="w-full h-fit bg-[#09090B] pt-40 px-4">
       {/* Mini Header */}
       <MiniHeader title="Anime" view={view} setView={setView} />
 
@@ -20,15 +20,14 @@ const Anime = () => {
             <Filters />
 
             {/* Anime Grid View */}
-            <div className="flex flex-col gap-12 mt-16">
+            <div className="flex flex-col gap-12 mt-20">
               <div className="flex flex-col gap-10">
-                <p className="flex justify-start border-b border-[#151518] w-full pb-4 text-[20px] font-semibold">
+                <p className="flex justify-start text-[20px] font-semibold border-b border-[#151518]/10 pb-4">
                   Most Popular Anime
                 </p>
 
                 <div className="flex flex-col gap-5">
-                  <div className="flex flex-row items-center gap-5 overflow-hidden">
-                    <AnimeCard />
+                  <div className="flex flex-row justify-between items-center">
                     <AnimeCard />
                     <AnimeCard />
                     <AnimeCard />
@@ -36,8 +35,7 @@ const Anime = () => {
                     <AnimeCard />
                   </div>
 
-                  <div className="flex flex-row items-center gap-5 overflow-hidden">
-                    <AnimeCard />
+                  <div className="flex flex-row justify-between items-center">
                     <AnimeCard />
                     <AnimeCard />
                     <AnimeCard />
