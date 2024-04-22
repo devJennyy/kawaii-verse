@@ -1,12 +1,21 @@
 import CharactersCard from "@/components/CharactersCard";
+import { Vortex } from "@/components/ui/vortex";
 
 const Characters = () => {
   return (
     // Main Container
     <div className="w-full h-fit bg-[#09090B] pt-40 px-4">
-      <p className="text-[40px] font-semibold bg-gradient-to-t from-[#FD1C68] from-25% to-[#FDAE8F] to-70% bg-clip-text text-transparent">
-        Top Characters
-      </p>
+      
+      <div className="w-full mx-auto rounded-md overflow-hidden">
+        <Vortex
+          backgroundColor="black"
+          className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
+        >
+          <h2 className="text-white text-2xl md:text-6xl font-bold text-center">
+            Top Characters
+          </h2>
+        </Vortex>
+      </div>
 
       {/* Content */}
       <div className="flex flex-col gap-5 pt-20">

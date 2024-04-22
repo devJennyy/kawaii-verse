@@ -35,11 +35,10 @@ const MiniHeader: React.FC<Props> = ({ title, view, setView }) => {
         </div>
 
         <div className="flex flex-row gap-2">
-
           <Select>
             <SelectTrigger className="w-48 text-[15px] border border-[#27272A] focus:border-white rounded-md px-4">
-              <SelectValue placeholder="Sort by"/>
-              <MdKeyboardArrowDown size={22} className="opacity-60"/>
+              <SelectValue placeholder="Sort by" />
+              <MdKeyboardArrowDown size={22} className="opacity-60" />
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
@@ -57,18 +56,18 @@ const MiniHeader: React.FC<Props> = ({ title, view, setView }) => {
           <DropdownMenu>
             <DropdownMenuTrigger className="w-48 border border-[#27272A] focus:border-white rounded-md px-4 text-[14px]">
               <div className="flex flex-row justify-between items-center">
-              <p className="text-[15px]">Filter by</p>
-              <LuSettings2 size={16} className="opacity-60"/>
+                <p className="text-[15px]">Filter by</p>
+                <LuSettings2 size={16} className="opacity-60" />
               </div>
             </DropdownMenuTrigger>
-            
+
             <DropdownMenuContent className="flex flex-col w-48 p-4 gap-5">
               <div className="flex flex-col gap-1">
                 <p className="text-[15px] pb-[1px]">Genre</p>
                 <Select>
                   <SelectTrigger className="border-[#27272A] text-[14px]">
                     <SelectValue placeholder="Choose type" />
-                    <MdKeyboardArrowDown size={22} className="opacity-60"/>
+                    <MdKeyboardArrowDown size={22} className="opacity-60" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectGroup>
@@ -87,11 +86,15 @@ const MiniHeader: React.FC<Props> = ({ title, view, setView }) => {
                         <div>
                           <SelectItem value="sci-fi">Sci-Fi</SelectItem>
                           <SelectItem value="seinen">Seinen</SelectItem>
-                          <SelectItem value="slice-of-life">Slice of Life</SelectItem>
+                          <SelectItem value="slice-of-life">
+                            Slice of Life
+                          </SelectItem>
                           <SelectItem value="shojo">Shojo</SelectItem>
                           <SelectItem value="shonen">Shonen</SelectItem>
                           <SelectItem value="sports">Sports</SelectItem>
-                          <SelectItem value="supernatural">Supernatural</SelectItem>
+                          <SelectItem value="supernatural">
+                            Supernatural
+                          </SelectItem>
                           <SelectItem value="thriller">Thriller</SelectItem>
                         </div>
                       </div>
@@ -105,7 +108,7 @@ const MiniHeader: React.FC<Props> = ({ title, view, setView }) => {
                 <Select>
                   <SelectTrigger className="border-[#27272A] text-[14px]">
                     <SelectValue placeholder="Choose type" />
-                    <MdKeyboardArrowDown size={22} className="opacity-60"/>
+                    <MdKeyboardArrowDown size={22} className="opacity-60" />
                   </SelectTrigger>
                   <SelectContent>
                     <SelectGroup>
