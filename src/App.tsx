@@ -17,7 +17,7 @@ function App() {
     <Router>
       {/* Navbar */}
       <div className="w-full border-b border-[#151518]/30 fixed top-0 backdrop-blur-md bg-[#09090B] z-50">
-        <div className="flex flex-1 flex-row justify-between max-w-[1536px] mx-auto px-4">
+        <div className="flex flex-1 flex-row max-w-[1500px] mx-auto px-4">
           <div className="flex flex-row items-center w-full h-16 gap-20">
             <a href="#homepage" className="flex gap-2">
               <img
@@ -57,7 +57,7 @@ function App() {
             </div>
           </div>
 
-          <div className="flex flex-row justify-end items-center w-full">
+          <div className="flex flex-row justify-end items-center">
             <button className="flex justify-center items-center hover:bg-[#27272A]/40 w-10 h-10 rounded-md">
               <FaGithub size={18} />
             </button>
