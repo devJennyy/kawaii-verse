@@ -17,7 +17,7 @@ const Anime = () => {
       <div className="w-full pt-10">
         {view == "grid" ? (
           <div>
-            <Filters sortBy="" filterGenre="" filterMedia=""/>
+            <Filters sortBy="Popularity" filterGenre="Action" filterMedia="Sub"/>
 
             {/* Anime Grid View */}
             <div className="flex flex-col gap-12 mt-20">
