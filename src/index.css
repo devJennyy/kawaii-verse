@@ -94,23 +94,11 @@
 }
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #c2c2c2 #ffffff;
-  }
+*.no-scrollbar::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
 
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 2px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #ffffff;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #c2c2c2;
-    border-radius: 3px;
-    border: 3px dashed #ffffff;
-  }
+*.no-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+}

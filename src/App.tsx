@@ -1,71 +1,93 @@
-import { FiSearch } from "react-icons/fi";
 import "./App.css";
-import { Route, Routes, BrowserRouter as Router, Navigate, Link} from "react-router-dom";
+import {
+  Route,
+  Routes,
+  BrowserRouter as Router,
+  Navigate,
+  Link,
+} from "react-router-dom";
 import Anime from "./Pages/Anime";
 import Homepage from "./Pages/Homepage";
 import Manga from "./Pages/Manga";
 import Characters from "./Pages/Characters";
+import { FaGithub } from "react-icons/fa";
 
 function App() {
   return (
     <Router>
-      {/* Main Container */}
-      <div className="w-full h-full flex flex-col bg-[#09090B] text-white">
-        {/* Navbar */}
-        <div className="flex flex-row justify-between items-center w-screen border-b border-[#151518] fixed top-0 backdrop-blur-md bg-[#09090B] z-50">
-          <div className="flex flex-row justify-start items-center w-full h-28 gap-20 px-20">
-            <a href="#homepage" className="flex gap-4">
+      {/* Navbar */}
+      <div className="w-full border-b border-[#151518]/30 fixed top-0 backdrop-blur-md bg-[#09090B] z-50">
+        <div className="flex flex-1 flex-row justify-between max-w-[1536px] mx-auto px-4">
+          <div className="flex flex-row items-center w-full h-16 gap-20">
+            <a href="#homepage" className="flex gap-2">
               <img
                 src="/logo.svg"
-                className="flex flex-1 max-w-[34px] h-full object-cover"
+                className="flex flex-1 max-w-[25px] h-full object-cover"
               />
-              <p className="bg-gradient-to-t from-[#FD1C68] from-30% to-[#FDAE8F] to-70% bg-clip-text text-transparent text-[24px] font-bold">
+              <p className="bg-gradient-to-t from-[#FD1C68] from-30% to-[#FDAE8F] to-70% bg-clip-text text-transparent text-[18px] font-bold">
                 KawaiiVerse
               </p>
             </a>
 
-            <div className="flex text-[16px] font-normal gap-6 menu-items">
-              <Link to={"/homepage"}>Explore</Link>
-              <Link to={"/anime"}>Anime</Link>
-              <Link to={"/manga"}>Manga</Link>
-              <Link to={"/characters"}>Top Characters</Link>
-            </div>
-
-            <div className="flex flex-row justify-end items-center flex-1 mr-2">
-              <div className="flex flex-row justify-end items-center flex-1 max-w-[465px] relative">
-                <input
-                  placeholder="Search anime..."
-                  className="w-full h-12 bg-[#09090B] border border-[#27272A] rounded-md pl-5 pr-12 text-[15px] outline-none focus:border-white"
-                />
-                <button className="absolute mr-5 cursor-pointer flex flex-1 max-w-5">
-                  <FiSearch className="w-full h-5" />
-                </button>
-              </div>
-              <button className="ml-6">
-                <img src="/icons/moon-stars.svg" />
-              </button>
+            <div className="flex text-[14px] gap-6 menu-items">
+              <Link
+                to={"/homepage"}
+                className="text-[#878788] font-medium hover:text-[#E6E6E6] focus:text-[#E6E6E6]"
+              >
+                Explore
+              </Link>
+              <Link
+                to={"/anime"}
+                className="text-[#878788] font-medium hover:text-[#E6E6E6] focus:text-[#E6E6E6]"
+              >
+                Anime
+              </Link>
+              <Link
+                to={"/manga"}
+                className="text-[#878788] font-medium hover:text-[#E6E6E6] focus:text-[#E6E6E6]"
+              >
+                Manga
+              </Link>
+              <Link
+                to={"/characters"}
+                className="text-[#878788] font-medium hover:text-[#E6E6E6] focus:text-[#E6E6E6]"
+              >
+                Top Characters
+              </Link>
             </div>
           </div>
-        </div>
 
+          <div className="flex flex-row justify-end items-center w-full">
+            <button className="flex justify-center items-center hover:bg-[#27272A]/40 w-10 h-10 rounded-md">
+              <FaGithub size={18} />
+            </button>
+            <button className="flex justify-center items-center hover:bg-[#27272A]/40 w-10 h-10 rounded-md">
+              <img src="/icons/moon-stars.svg" className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Container */}
+      <div className="max-w-[1536px] mx-auto h-fit flex flex-col bg-[#09090B] text-white">
         <div className="w-full h-fit">
           <Routes>
             <Route path="/" element={<Navigate to="/homepage" replace />} />
             <Route path="/homepage" element={<Homepage />} />
             <Route path="/anime" element={<Anime />} />
-            <Route path="/manga" element={<Manga/>} />
-            <Route path="/characters" element={<Characters/>} />
+            <Route path="/manga" element={<Manga />} />
+            <Route path="/characters" element={<Characters />} />
           </Routes>
         </div>
 
         {/* Footer*/}
-        <div className="w-full h-36 px-20 bg-[#09090B]">
-          <div className="border-b border-[#151518]"></div>
+        <div className="w-full h-80 px-4 pt-44">
+          <div className="border-b border-[#151518]/30"></div>
           <div className="flex flex-col justify-center items-center text-[12px] text-[#CCD6F6] font-light w-full pt-12">
             <p>Designed & Built by Jenny Pieloor</p>
             <p>Powered by Jikan API 2024</p>
           </div>
-        </div>  
+        </div>
       </div>
     </Router>
   );

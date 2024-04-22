@@ -2,7 +2,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const MangaCard = () => {
   return (
-    <button className="flex flex-col justify-center items-start min-w-[278px] h-fit bg-[#373737]/10 rounded-lg active:scale-95 transition-all">
+    <button className="flex flex-col justify-center items-start min-w-[280px] h-fit bg-[#373737]/10 rounded-lg">
       <div className="p-4">
         <div className="flex w-full">
           <img
