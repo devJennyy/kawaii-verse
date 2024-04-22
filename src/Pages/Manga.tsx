@@ -17,7 +17,7 @@ const Manga = () => {
       <div className="w-full pt-10">
         {view == "grid" ? (
           <div>
-            <Filters/>
+            <Filters sortBy="Newest" filterGenre="Adventure" filterMedia="All"/>
 
             {/* Anime List */}
             <div className="flex flex-col gap-12 mt-20">
@@ -54,7 +54,7 @@ const Manga = () => {
           </div>
         ) : (
           <div>
-            <Filters />
+            <Filters sortBy="Newest" filterGenre="Adventure" filterMedia="All"/>
             
             {/* Anime List */}
             <div className="flex flex-col mt-16">
