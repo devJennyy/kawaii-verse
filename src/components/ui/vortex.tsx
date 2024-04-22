@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { cn } from "@/utils/cn";
 import { useEffect, useRef } from "react";
 import { createNoise3D } from "simplex-noise";
@@ -206,7 +207,7 @@ export const Vortex = (props: VortexProps) => {
 
   const resize = (
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-canvas: HTMLCanvasElement, ctx: CanvasRenderingContext2D) => {
+canvas: HTMLCanvasElement, _ctx: CanvasRenderingContext2D) => {
     const { innerWidth, innerHeight } = window;
 
     canvas.width = innerWidth;
