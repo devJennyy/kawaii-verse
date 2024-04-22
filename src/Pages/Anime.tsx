@@ -48,7 +48,7 @@ const Anime = () => {
           </div>
         ) : (
           <div>
-            <Filters />
+            <Filters sortBy="Newest" filterGenre="Adventure" filterMedia="All"/>
 
             {/* Anime List View */}
             <div className="flex flex-col mt-16">
