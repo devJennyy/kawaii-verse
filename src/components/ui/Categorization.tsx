@@ -37,12 +37,12 @@ const MiniHeader: React.FC<Props> = ({ title, view, setView, hasMedia }) => {
 
         <div className="flex flex-row gap-2">
           <Select>
-            <SelectTrigger className="w-48 text-[15px] border border-[#27272A] focus:border-white rounded-md px-4">
+            <SelectTrigger className="w-48 text-sm border border-[#27272A] focus:border-white rounded-md px-4">
               <SelectValue placeholder="Sort by" />
               <MdKeyboardArrowDown size={22} className="opacity-60" />
             </SelectTrigger>
             <SelectContent>
-              <SelectGroup>
+              <SelectGroup className="text-sm">
                 <SelectItem value="popular">Popularity</SelectItem>
                 <SelectItem value="newest">Newest</SelectItem>
                 <SelectItem value="alphabetical">Alphabetical</SelectItem>
@@ -57,21 +57,21 @@ const MiniHeader: React.FC<Props> = ({ title, view, setView, hasMedia }) => {
           <DropdownMenu>
             <DropdownMenuTrigger className="w-48 border border-[#27272A] focus:border-white rounded-md px-4 text-[14px]">
               <div className="flex flex-row justify-between items-center">
-                <p className="text-[15px]">Filter by</p>
+                <p className="text-sm">Filter by</p>
                 <LuSettings2 size={16} className="opacity-60" />
               </div>
             </DropdownMenuTrigger>
 
             <DropdownMenuContent className="flex flex-col w-48 p-4 gap-5">
               <div className="flex flex-col gap-1">
-                <p className="text-[15px] pb-[1px]">Genre</p>
+                <p className="text-sm pb-[1px]">Genre</p>
                 <Select>
-                  <SelectTrigger className="border-[#27272A] text-[14px]">
+                  <SelectTrigger className="border-[#27272A] text-[13px]">
                     <SelectValue placeholder="Choose type" />
-                    <MdKeyboardArrowDown size={22} className="opacity-60" />
+                    <MdKeyboardArrowDown size={16} className="opacity-60" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectGroup>
+                    <SelectGroup className="text-sm">
                       <div className="flex flex-row">
                         <div>
                           <SelectItem value="all">All</SelectItem>
@@ -106,14 +106,14 @@ const MiniHeader: React.FC<Props> = ({ title, view, setView, hasMedia }) => {
 
               {hasMedia && (
                 <div className="flex flex-col gap-1">
-                  <p className="text-[15px] pb-[1px]">Media</p>
+                  <p className="text-sm pb-[1px]">Media</p>
                   <Select>
-                    <SelectTrigger className="border-[#27272A] text-[14px]">
+                    <SelectTrigger className="border-[#27272A] text-[13px]">
                       <SelectValue placeholder="Choose type" />
-                      <MdKeyboardArrowDown size={22} className="opacity-60" />
+                      <MdKeyboardArrowDown size={16} className="opacity-60" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectGroup>
+                      <SelectGroup className="text-sm">
                         <SelectItem value="popular">All</SelectItem>
                         <SelectItem value="newest">Series</SelectItem>
                         <SelectItem value="alphabetical">Movies</SelectItem>

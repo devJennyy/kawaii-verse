@@ -11,6 +11,13 @@ import Homepage from "./Pages/Homepage";
 import Manga from "./Pages/Manga";
 import Characters from "./Pages/Characters";
 import { FaGithub } from "react-icons/fa";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+} from "./lib/shadcomponents/ui/select";
 
 function App() {
   return (
@@ -58,12 +65,20 @@ function App() {
           </div>
 
           <div className="flex flex-row justify-end items-center">
-            <button className="flex justify-center items-center hover:bg-[#27272A]/40 w-10 h-10 rounded-md">
+            <a href="https://github.com/devJennyy" className="flex justify-center items-center hover:bg-[#27272A]/40 w-10 h-10 rounded-md">
               <FaGithub size={18} />
-            </button>
-            <button className="flex justify-center items-center hover:bg-[#27272A]/40 w-10 h-10 rounded-md">
-              <img src="/icons/moon-stars.svg" className="w-4 h-4" />
-            </button>
+            </a>
+            <Select>
+              <SelectTrigger className="flex justify-center items-center hover:bg-[#27272A]/40 w-10 h-10 rounded-md border-none">
+                <img src="/icons/moon-stars.svg" className="w-4 h-4" />
+              </SelectTrigger>
+              <SelectContent className="absolute right-[-30px] text-[13px]">
+                <SelectGroup>
+                  <SelectItem value="light">Light</SelectItem>
+                  <SelectItem value="dark">Dark</SelectItem>
+                </SelectGroup>
+              </SelectContent>
+            </Select>
           </div>
         </div>
       </div>

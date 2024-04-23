@@ -57,7 +57,7 @@ const Homepage = () => {
               />
             </div>
 
-            <div className="flex flex-col gap-16 z-50">
+            <div className="flex flex-col gap-16 z-25">
               <div className="flex flex-col justify-center items-center">
                 <p className="text-[40px] font-extrabold tracking-[2px]">
                   Welcome to
