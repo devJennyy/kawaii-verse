@@ -4,7 +4,7 @@ import { SparklesCore } from "@/components/effects/sparkles";
 const Characters = () => {
   return (
     // Main Container
-    <div className="w-full h-fit bg-[#09090B] pt-40 px-4">
+    <div className="w-full h-fit bg-[#09090B] pt-32 px-4">
       <div className="relative w-full h-32 flex flex-col items-center justify-center overflow-hidden rounded-md">
         <div className="absolute inset-0">
           <SparklesCore
@@ -24,21 +24,21 @@ const Characters = () => {
       {/* Content */}
       <div className="flex flex-col gap-5 pt-20">
         <div className="flex flex-row justify-between w-full">
-          <CharactersCard />
-          <CharactersCard />
-          <CharactersCard />
-          <CharactersCard />
-          <CharactersCard />
-          <CharactersCard />
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
         </div>
 
         <div className="flex flex-row justify-between w-full">
-          <CharactersCard />
-          <CharactersCard />
-          <CharactersCard />
-          <CharactersCard />
-          <CharactersCard />
-          <CharactersCard />
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
+          <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
         </div>
       </div>
     </div>

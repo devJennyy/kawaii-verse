@@ -7,6 +7,7 @@ import { SparklesCore } from "@/components/effects/sparkles";
 import { TypewriterEffectSmooth } from "@/components/effects/typewritter-effect";
 
 const Homepage = () => {
+  const selectedGenre = ["Action", "Adventure", "Slice of Life"];
   const words = [
     {
       text: "Explore",
@@ -92,12 +93,60 @@ const Homepage = () => {
             <TitleBorder Subtitle="Most" Title="Popular" />
 
             <div className="flex flex-row items-center w-full gap-4 mt-16 overflow-auto no-scrollbar">
-              <AnimeCard />
-              <AnimeCard />
-              <AnimeCard />
-              <AnimeCard />
-              <AnimeCard />
-              <AnimeCard />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
             </div>
           </div>
 
@@ -106,12 +155,60 @@ const Homepage = () => {
             <TitleBorder Subtitle="Top" Title="Airing" />
 
             <div className="flex flex-row items-center w-full gap-4 mt-16 overflow-auto no-scrollbar">
-              <AnimeCard />
-              <AnimeCard />
-              <AnimeCard />
-              <AnimeCard />
-              <AnimeCard />
-              <AnimeCard />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
+              <AnimeCard
+                animeCover="/images/anime-cover.jpg"
+                englishTitle="Demon Slayer"
+                japaneseTitle="Kimetsu No Yaiba"
+                currentSeason="Season 1"
+                episodeCount="24 Episodes"
+                durationTime="24 Mins"
+                selectedGenre={selectedGenre}
+              />
             </div>
           </div>
 
@@ -141,12 +238,60 @@ const Homepage = () => {
             <TitleBorder Subtitle="Latest" Title="Manga" />
 
             <div className="flex flex-row items-center gap-4 mt-16 overflow-hidden">
-              <MangaCard />
-              <MangaCard />
-              <MangaCard />
-              <MangaCard />
-              <MangaCard />
-              <MangaCard />
+              <MangaCard
+                mangaCover={"/images/anime-cover.jpg"}
+                selectedGenre={selectedGenre}
+                englishTitle={"Kimetsu no Yaiba"}
+                shortDescription={
+                  "Lorem ipsum dolor sit, amet consectetur adi elit. Quam suscipit ullam aliquam incidunt error vitae odit illum necessitatibus qui ex. Quae iure eligendi voluptatum harum sit architecto tenetur pariatur vero?"
+                }
+                durationTime="1 month ago"
+              />
+              <MangaCard
+                mangaCover={"/images/anime-cover.jpg"}
+                selectedGenre={selectedGenre}
+                englishTitle={"Kimetsu no Yaiba"}
+                shortDescription={
+                  "Lorem ipsum dolor sit, amet consectetur adi elit. Quam suscipit ullam aliquam incidunt error vitae odit illum necessitatibus qui ex. Quae iure eligendi voluptatum harum sit architecto tenetur pariatur vero?"
+                }
+                durationTime="1 month ago"
+              />
+              <MangaCard
+                mangaCover={"/images/anime-cover.jpg"}
+                selectedGenre={selectedGenre}
+                englishTitle={"Kimetsu no Yaiba"}
+                shortDescription={
+                  "Lorem ipsum dolor sit, amet consectetur adi elit. Quam suscipit ullam aliquam incidunt error vitae odit illum necessitatibus qui ex. Quae iure eligendi voluptatum harum sit architecto tenetur pariatur vero?"
+                }
+                durationTime="1 month ago"
+              />
+              <MangaCard
+                mangaCover={"/images/anime-cover.jpg"}
+                selectedGenre={selectedGenre}
+                englishTitle={"Kimetsu no Yaiba"}
+                shortDescription={
+                  "Lorem ipsum dolor sit, amet consectetur adi elit. Quam suscipit ullam aliquam incidunt error vitae odit illum necessitatibus qui ex. Quae iure eligendi voluptatum harum sit architecto tenetur pariatur vero?"
+                }
+                durationTime="1 month ago"
+              />
+              <MangaCard
+                mangaCover={"/images/anime-cover.jpg"}
+                selectedGenre={selectedGenre}
+                englishTitle={"Kimetsu no Yaiba"}
+                shortDescription={
+                  "Lorem ipsum dolor sit, amet consectetur adi elit. Quam suscipit ullam aliquam incidunt error vitae odit illum necessitatibus qui ex. Quae iure eligendi voluptatum harum sit architecto tenetur pariatur vero?"
+                }
+                durationTime="1 month ago"
+              />
+              <MangaCard
+                mangaCover={"/images/anime-cover.jpg"}
+                selectedGenre={selectedGenre}
+                englishTitle={"Kimetsu no Yaiba"}
+                shortDescription={
+                  "Lorem ipsum dolor sit, amet consectetur adi elit. Quam suscipit ullam aliquam incidunt error vitae odit illum necessitatibus qui ex. Quae iure eligendi voluptatum harum sit architecto tenetur pariatur vero?"
+                }
+                durationTime="1 month ago"
+              />
             </div>
           </div>
         </div>
