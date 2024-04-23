@@ -11,7 +11,7 @@ const Manga = () => {
 
   return (
     // Main Container
-    <div className="w-full h-fit bg-[#09090B] pt-40 px-4">
+    <div className="max-w-[1500px] mx-auto h-fit bg-[#09090B] pt-40 px-4">
       {/* Mini Header */}
       <MiniHeader
         title="Manga"

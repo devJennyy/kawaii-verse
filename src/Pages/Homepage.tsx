@@ -43,7 +43,7 @@ const Homepage = () => {
         {/* Home Container */}
         <div
           id="homepage"
-          className="flex flex-col justify-center items-center w-full h-fit mt-20"
+          className="flex flex-col justify-center items-center max-w-[1500px] mx-auto h-fit mt-20"
         >
           <div className=" h-[100vh] relative w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
             <div className="w-full absolute inset-0 h-[40vh]">

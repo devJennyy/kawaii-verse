@@ -4,7 +4,7 @@ import { SparklesCore } from "@/components/effects/sparkles";
 const Characters = () => {
   return (
     // Main Container
-    <div className="w-full h-fit bg-[#09090B] pt-32 px-4">
+    <div className="max-w-[1500px] mx-auto h-fit bg-[#09090B] pt-32 px-4">
       <div className="relative w-full h-32 flex flex-col items-center justify-center overflow-hidden rounded-md">
         <div className="absolute inset-0">
           <SparklesCore
