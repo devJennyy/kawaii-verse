@@ -21,9 +21,10 @@ interface Props {
   title: string;
   view: string;
   setView: any;
+  hasMedia: boolean;
 }
 
-const MiniHeader: React.FC<Props> = ({ title, view, setView }) => {
+const MiniHeader: React.FC<Props> = ({ title, view, setView, hasMedia }) => {
   return (
     <div className="flex flex-col gap-2 w-full">
       <div className="flex flex-row justify-between items-center">
@@ -103,22 +104,24 @@ const MiniHeader: React.FC<Props> = ({ title, view, setView }) => {
                 </Select>
               </div>
 
-              <div className="flex flex-col gap-1">
-                <p className="text-[15px] pb-[1px]">Media</p>
-                <Select>
-                  <SelectTrigger className="border-[#27272A] text-[14px]">
-                    <SelectValue placeholder="Choose type" />
-                    <MdKeyboardArrowDown size={22} className="opacity-60" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectGroup>
-                      <SelectItem value="popular">All</SelectItem>
-                      <SelectItem value="newest">Series</SelectItem>
-                      <SelectItem value="alphabetical">Movies</SelectItem>
-                    </SelectGroup>
-                  </SelectContent>
-                </Select>
-              </div>
+              {hasMedia && (
+                <div className="flex flex-col gap-1">
+                  <p className="text-[15px] pb-[1px]">Media</p>
+                  <Select>
+                    <SelectTrigger className="border-[#27272A] text-[14px]">
+                      <SelectValue placeholder="Choose type" />
+                      <MdKeyboardArrowDown size={22} className="opacity-60" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectGroup>
+                        <SelectItem value="popular">All</SelectItem>
+                        <SelectItem value="newest">Series</SelectItem>
+                        <SelectItem value="alphabetical">Movies</SelectItem>
+                      </SelectGroup>
+                    </SelectContent>
+                  </Select>
+                </div>
+              )}
             </DropdownMenuContent>
           </DropdownMenu>
 

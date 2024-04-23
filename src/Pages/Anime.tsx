@@ -1,23 +1,24 @@
-import AnimeCard from "../components/AnimeCard";
+import AnimeCard from "../components/cards/AnimeCard";
 import { useState } from "react";
-import MiniHeader from "../components/MiniHeader";
-import Filters from "../components/Filters";
-import AnimeListView from "@/components/AnimeListView";
+import MiniHeader from "../components/ui/Categorization";
+import Filters from "../components/ui/Filters";
+import AnimeListView from "@/components/cards/ListCard";
 
 const Anime = () => {
   const [view, setView] = useState("grid");
+  const selectedFilters = ["Newest", "Adventure", "Subtitle"]
 
   return (
     // Main Container
     <div className="w-full h-fit bg-[#09090B] pt-40 px-4">
       {/* Mini Header */}
-      <MiniHeader title="Anime" view={view} setView={setView} />
+      <MiniHeader title="Anime" view={view} setView={setView} hasMedia={true}/>
 
       {/* Content */}
       <div className="w-full pt-10">
         {view == "grid" ? (
           <div>
-            <Filters sortBy="Popularity" filterGenre="Action" filterMedia="Sub"/>
+            <Filters selectedFilters={selectedFilters}/>
 
             {/* Anime Grid View */}
             <div className="flex flex-col gap-12 mt-20">
@@ -48,7 +49,7 @@ const Anime = () => {
           </div>
         ) : (
           <div>
-            <Filters sortBy="Newest" filterGenre="Adventure" filterMedia="All"/>
+            <Filters/>
 
             {/* Anime List View */}
             <div className="flex flex-col mt-16">

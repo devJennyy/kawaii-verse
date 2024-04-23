@@ -1,36 +1,84 @@
-import TitleBorder from "@/components/TitleBorder";
-import AnimeCard from "../components/AnimeCard";
-import MangaCard from "../components/MangaCard";
-import MiniSlideshowCard from "../components/MiniSlideshowCard";
-import SlideshowCard from "../components/SlideshowCard";
+import TitleBorder from "@/components/ui/RankingsOverview";
+import AnimeCard from "../components/cards/AnimeCard";
+import MangaCard from "../components/cards/MangaCard";
+import MiniSlideshowCard from "../components/cards/MiniSlideshowCard";
+import SlideshowCard from "../components/cards/SlideshowCard";
+import { SparklesCore } from "@/components/effects/sparkles";
+import { TypewriterEffectSmooth } from "@/components/effects/typewritter-effect";
 
 const Homepage = () => {
+  const words = [
+    {
+      text: "Explore",
+    },
+    {
+      text: "a",
+    },
+    {
+      text: "curated",
+    },
+    {
+      text: "collection",
+    },
+    {
+      text: "of",
+    },
+    {
+      text: "anime",
+    },
+    {
+      text: "on",
+    },
+    {
+      text: "KawaiiVerse",
+      className:
+        "bg-gradient-to-t from-[#FD1C68] from-25% to-[#FDAE8F] to-70% bg-clip-text text-transparent",
+    },
+  ];
+
   return (
     <>
       <div className="px-4">
         {/* Home Container */}
         <div
           id="homepage"
-          className="flex flex-col justify-center items-center w-full h-fit gap-24 pt-56"
+          className="flex flex-col justify-center items-center w-full h-fit mt-20"
         >
-          <div className="flex flex-col justify-center items-center">
-            <p className="text-[40px] font-extrabold tracking-[2px]">
-              Welcome to
-              <span className="bg-gradient-to-t from-[#FD1C68] from-25% to-[#FDAE8F] to-70% bg-clip-text text-transparent ml-3">
-                KawaiiVerse
-              </span>
-            </p>
-            <p className="text-[18px] font-light pt-1">
-              Explore a curated collection of anime on KawaiiVerse.
-            </p>
-          </div>
+          <div className=" h-[100vh] relative w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
+            <div className="w-full absolute inset-0 h-[40vh]">
+              <SparklesCore
+                id="tsparticlesfullpage"
+                background="transparent"
+                minSize={0.6}
+                maxSize={1.4}
+                particleDensity={100}
+                className="w-full h-full"
+                particleColor="#FFFFFF"
+              />
+            </div>
 
-          <div className="flex flex-row justify-center items-center gap-7 w-full h-[450px] overflow-hidden">
-            <MiniSlideshowCard />
-            <MiniSlideshowCard />
-            <SlideshowCard />
-            <MiniSlideshowCard />
-            <MiniSlideshowCard />
+            <div className="flex flex-col gap-16 z-50">
+              <div className="flex flex-col justify-center items-center">
+                <p className="text-[40px] font-extrabold tracking-[2px]">
+                  Welcome to
+                  <span className="bg-gradient-to-t from-[#FD1C68] from-25% to-[#FDAE8F] to-70% bg-clip-text text-transparent ml-3">
+                    KawaiiVerse
+                  </span>
+                </p>
+
+                <div className="flex items-center justify-center">
+                  <TypewriterEffectSmooth words={words} />
+                </div>
+              </div>
+
+              <div className="flex flex-row justify-center items-center gap-7 w-full h-[450px] overflow-hidden">
+                <MiniSlideshowCard />
+                <MiniSlideshowCard />
+                <SlideshowCard />
+                <MiniSlideshowCard />
+                <MiniSlideshowCard />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -41,7 +89,7 @@ const Homepage = () => {
         >
           {/* Most Popular Anime */}
           <div className="flex flex-col w-full h-full overflow-hidden">
-            <TitleBorder criteriaSubtitle="Most" criteriaTitle="Popular" />
+            <TitleBorder Subtitle="Most" Title="Popular" />
 
             <div className="flex flex-row items-center w-full gap-4 mt-16 overflow-auto no-scrollbar">
               <AnimeCard />
@@ -55,7 +103,7 @@ const Homepage = () => {
 
           {/* Top Airing Anime */}
           <div className="flex flex-col w-full h-full overflow-hidden">
-            <TitleBorder criteriaSubtitle="Top" criteriaTitle="Airing" />
+            <TitleBorder Subtitle="Top" Title="Airing" />
 
             <div className="flex flex-row items-center w-full gap-4 mt-16 overflow-auto no-scrollbar">
               <AnimeCard />
@@ -69,7 +117,7 @@ const Homepage = () => {
 
           {/* Trending Anime */}
           <div className="flex flex-col">
-            <TitleBorder criteriaSubtitle="Now" criteriaTitle="Trending" />
+            <TitleBorder Subtitle="Now" Title="Trending" />
 
             <button className="flex flex-row justify-between items-center mt-16 overflow-hidden rounded-sm">
               <div className="w-1/2">
@@ -90,7 +138,7 @@ const Homepage = () => {
 
           {/* Latest Manga */}
           <div className="flex flex-col">
-            <TitleBorder criteriaSubtitle="Latest" criteriaTitle="Manga"/>
+            <TitleBorder Subtitle="Latest" Title="Manga" />
 
             <div className="flex flex-row items-center gap-4 mt-16 overflow-hidden">
               <MangaCard />
