@@ -15,7 +15,7 @@ const TitleBorder = ({Subtitle, Title} : Props) => {
           </span>
         </p>
       </div>
-      <div className="border-b border-[#151518]/20 w-full pt-2">
+      <div className="xl:border-b xl:border-[#151518]/30 sm:border-b-2 sm:border-[#151518] w-full pt-2">
         <div className="gradient-border-b"></div>
       </div>
     </div>

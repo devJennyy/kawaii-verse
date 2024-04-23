@@ -23,7 +23,7 @@ const Characters = () => {
       </div>
       {/* Content */}
       <div className="flex flex-col gap-4 pt-20">
-        <div className="flex flex-row justify-between w-full overflow-hidden gap-4">
+        <div className="flex flex-row justify-between w-full overflow-auto no-scrollbar gap-4">
           <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
           <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
           <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
@@ -32,7 +32,7 @@ const Characters = () => {
           <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
         </div>
 
-        <div className="flex flex-row justify-between w-full overflow-hidden gap-4">
+        <div className="flex flex-row justify-between w-full overflow-auto no-scrollbar gap-4">
           <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
           <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>
           <CharactersCard characterCover="/images/top-characters.jpeg" characterName="Power" animeTitle="The Chainsaw Man" likesCount="10, 672"/>

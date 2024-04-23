@@ -45,7 +45,7 @@ const AnimeCard = ({
         <div className="flex flex-row justify-between items-center w-full gap-2 text-[11px]">
           {selectedGenre?.map((genre) => {
             return (
-              <p className="flex justify-center items-center w-full h-5 bg-[#E9E9E9]/30 rounded-md font-light truncate pl-2 pr-2">
+              <p className="flex justify-center items-center w-full h-5 xl:bg-[#E9E9E9]/30 sm:bg-[#E9E9E9]/10 rounded-md font-light truncate pl-2 pr-2">
                 {genre}
               </p>
             );

@@ -46,7 +46,7 @@ const Homepage = () => {
           className="flex flex-col justify-center items-center max-w-[1500px] mx-auto h-fit mt-20"
         >
           <div className="max-w-full mx-auto h-[100vh] relative flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <div className=" absolute inset-0 h-[40vh]">
+            <div className="absolute inset-0 h-[40vh]">
               <SparklesCore
                 id="tsparticlesfullpage"
                 background="transparent"
@@ -58,8 +58,8 @@ const Homepage = () => {
               />
             </div>
 
-            <div className="flex flex-col gap-16 z-25">
-              <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col z-25">
+              <div className="flex flex-col justify-center items-center absolute left-[452px] top-[140px]">
                 <p className="text-[40px] font-extrabold tracking-[2px]">
                   Welcome to
                   <span className="bg-gradient-to-t from-[#FD1C68] from-25% to-[#FDAE8F] to-70% bg-clip-text text-transparent ml-3">
@@ -72,7 +72,7 @@ const Homepage = () => {
                 </div>
               </div>
 
-              <div className="flex flex-row justify-center items-center gap-7 w-full h-[450px] overflow-hidden">
+              <div className="flex flex-row justify-center items-center gap-7 w-full h-[450px] overflow-hidden mt-56">
                 <MiniSlideshowCard />
                 <MiniSlideshowCard />
                 <SlideshowCard />
@@ -86,7 +86,7 @@ const Homepage = () => {
         {/* Explore Container*/}
         <div
           id="explore"
-          className="flex flex-col w-full bg-[#09090B] overflow-hidden mt-40 gap-24"
+          className="flex flex-col w-full bg-[#09090B] overflow-hidden mt-20 gap-24"
         >
           {/* Most Popular Anime */}
           <div className="flex flex-col w-full h-full overflow-hidden">

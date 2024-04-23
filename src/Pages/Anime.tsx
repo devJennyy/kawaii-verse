@@ -24,12 +24,12 @@ const Anime = () => {
             {/* Anime Grid View */}
             <div className="flex flex-col gap-12 mt-20">
               <div className="flex flex-col gap-10">
-                <p className="flex justify-start text-[20px] font-semibold border-b border-[#151518]/10 pb-4">
+                <p className="flex justify-start text-[20px] font-semibold xl:border-b xl:border-[#151518]/10 sm:border-b-2 sm:border-[#151518] pb-4">
                   Most Popular Anime
                 </p>
 
                 <div className="flex flex-col w-full gap-4">
-                  <div className="flex flex-row justify-between items-center gap-4 overflow-hidden">
+                  <div className="flex flex-row justify-between items-center gap-4 overflow-auto no-scrollbar">
                     <AnimeCard
                       animeCover="/images/anime-cover.jpg"
                       englishTitle="Demon Slayer"
@@ -77,7 +77,7 @@ const Anime = () => {
                     />
                   </div>
 
-                  <div className="flex flex-row justify-between items-center w-full gap-4 overflow-hidden">
+                  <div className="flex flex-row justify-between items-center w-full gap-4 overflow-auto no-scrollbar">
                     <AnimeCard
                       animeCover="/images/anime-cover.jpg"
                       englishTitle="Demon Slayer"

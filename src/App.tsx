@@ -97,7 +97,7 @@ function App() {
 
         {/* Footer*/}
         <div className="w-full h-80 px-4 pt-44">
-          <div className="border-b xl:border-[#151518]/30 sm:border-b-2 sm:border-[#151518] lg:border-[#151518]"></div>
+          <div className="xl:border-b xl:border-[#151518]/30 sm:border-b-2 sm:border-[#151518] lg:border-[#151518]"></div>
           <div className="flex flex-col justify-center items-center text-[12px] text-[#CCD6F6] font-light w-full pt-12">
             <p>Designed & Built by Jenny Pieloor</p>
             <p>Powered by Jikan API 2024</p>
