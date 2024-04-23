@@ -16,7 +16,7 @@ const MangaCard = ({
   durationTime,
 }: Props) => {
   return (
-    <button className="flex flex-col justify-center items-start min-w-[280px] h-fit bg-[#373737]/10 rounded-lg">
+    <button className="flex flex-col justify-center items-start min-w-[280px] h-fit bg-[#373737]/10 rounded-lg overflow-hidden">
       <div className="p-4">
         <div className="flex w-full">
           <img

@@ -45,8 +45,8 @@ const Homepage = () => {
           id="homepage"
           className="flex flex-col justify-center items-center max-w-[1500px] mx-auto h-fit mt-20"
         >
-          <div className=" h-[100vh] relative w-full flex flex-col items-center justify-center overflow-hidden rounded-md">
-            <div className="w-full absolute inset-0 h-[40vh]">
+          <div className="max-w-full mx-auto h-[100vh] relative flex flex-col items-center justify-center overflow-hidden rounded-md">
+            <div className=" absolute inset-0 h-[40vh]">
               <SparklesCore
                 id="tsparticlesfullpage"
                 background="transparent"
@@ -237,7 +237,7 @@ const Homepage = () => {
           <div className="flex flex-col">
             <TitleBorder Subtitle="Latest" Title="Manga" />
 
-            <div className="flex flex-row items-center gap-4 mt-16 overflow-hidden">
+            <div className="flex flex-row items-center gap-4 mt-16 overflow-auto no-scrollbar">
               <MangaCard
                 mangaCover={"/images/anime-cover.jpg"}
                 selectedGenre={selectedGenre}
