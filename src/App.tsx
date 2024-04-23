@@ -24,7 +24,7 @@ function App() {
     <Router>
       {/* Navbar */}
       <div className="w-full border-b xl:border-[#151518]/30 sm:border-[#151518] fixed top-0 backdrop-blur-md bg-[#09090B] z-50">
-        <div className="flex flex-1 flex-row max-w-[1500px] mx-auto px-4">
+        <div className="flex flex-1 flex-row max-w-[1240px] mx-auto px-4">
           <div className="flex flex-row items-center w-full h-16 gap-20">
             <a href="#homepage" className="flex gap-2">
               <img
