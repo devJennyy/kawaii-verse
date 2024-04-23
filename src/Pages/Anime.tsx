@@ -29,7 +29,7 @@ const Anime = () => {
                 </p>
 
                 <div className="flex flex-col w-full gap-4">
-                  <div className="flex flex-row justify-between items-center w-full gap-4">
+                  <div className="flex flex-row justify-between items-center gap-4 overflow-hidden">
                     <AnimeCard
                       animeCover="/images/anime-cover.jpg"
                       englishTitle="Demon Slayer"
@@ -77,7 +77,7 @@ const Anime = () => {
                     />
                   </div>
 
-                  <div className="flex flex-row justify-between items-center w-full gap-4">
+                  <div className="flex flex-row justify-between items-center w-full gap-4 overflow-hidden">
                     <AnimeCard
                       animeCover="/images/anime-cover.jpg"
                       englishTitle="Demon Slayer"

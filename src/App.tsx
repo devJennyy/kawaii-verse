@@ -23,8 +23,8 @@ function App() {
   return (
     <Router>
       {/* Navbar */}
-      <div className="w-full border-b xl:border-[#151518]/30 sm:border-[#151518] fixed top-0 backdrop-blur-md bg-[#09090B] z-50">
-        <div className="flex flex-1 flex-row max-w-[1240px] mx-auto px-4">
+      <div className="w-full xl:border-b xl:border-[#151518]/30 sm:border-b-2 sm:border-[#151518] fixed top-0 backdrop-blur-md bg-[#09090B] z-50">
+        <div className="flex flex-1 flex-row max-w-[1500px] mx-auto px-4">
           <div className="flex flex-row items-center w-full h-16 gap-20">
             <a href="#homepage" className="flex gap-2">
               <img
@@ -66,7 +66,7 @@ function App() {
 
           <div className="flex flex-row justify-end items-center">
             <a href="https://github.com/devJennyy" className="flex justify-center items-center hover:bg-[#27272A]/40 w-10 h-10 rounded-md">
-              <FaGithub size={18} />
+              <FaGithub size={18} className="text-white"/>
             </a>
             <Select>
               <SelectTrigger className="flex justify-center items-center hover:bg-[#27272A]/40 w-10 h-10 rounded-md border-none">
@@ -97,7 +97,7 @@ function App() {
 
         {/* Footer*/}
         <div className="w-full h-80 px-4 pt-44">
-          <div className="border-b xl:border-[#151518]/30 sm:border-[#151518] lg:border-[#151518]"></div>
+          <div className="border-b xl:border-[#151518]/30 sm:border-b-2 sm:border-[#151518] lg:border-[#151518]"></div>
           <div className="flex flex-col justify-center items-center text-[12px] text-[#CCD6F6] font-light w-full pt-12">
             <p>Designed & Built by Jenny Pieloor</p>
             <p>Powered by Jikan API 2024</p>
