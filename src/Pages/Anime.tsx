@@ -3,9 +3,63 @@ import { useState } from "react";
 import MiniHeader from "../components/ui/Categorization";
 import Filters from "../components/ui/Filters";
 import AnimeListView from "@/components/cards/ListCard";
+import { IAnime } from "@/interface/Anime";
 
 const Anime = () => {
   const [view, setView] = useState("grid");
+  const [animeList, setAnimeList] = useState<IAnime[]>([
+    {
+      image:
+        "https://m.media-amazon.com/images/M/MV5BZjZjNzI5MDctY2Y4YS00NmM4LTljMmItZTFkOTExNGI3ODRhXkEyXkFqcGdeQXVyNjc3MjQzNTI@._V1_.jpg",
+      englishTitle: "Demon Slayer",
+      japaneseTitle: "Kimetsu No Yaiba",
+      currentSeason: "Season 1",
+      episodeCount: 24,
+      durationTime: 24,
+      genre: ["Action", "Adventure", "Slice of Life"],
+    },
+    {
+      image:
+        "https://cdn.myanimelist.net/images/anime/1632/110707l.jpg",
+      englishTitle: "Chainsaw Man",
+      japaneseTitle: "チェンソーマン",
+      currentSeason: "Season 1",
+      episodeCount: 24,
+      durationTime: 24,
+      genre: ["Action", "Adventure", "Slice of Life"],
+    },
+    {
+      image:
+        "https://cdn.myanimelist.net/images/anime/1244/138851.jpg",
+      englishTitle: "One Piece",
+      japaneseTitle: "Wanpisuu",
+      currentSeason: "Season 1",
+      episodeCount: 24,
+      durationTime: 24,
+      genre: ["Action", "Adventure", "Slice of Life"],
+    },
+    {
+      image:
+        "https://cdn.myanimelist.net/images/anime/1885/127108.jpg",
+      englishTitle: "One Punch Man",
+      japaneseTitle: "ワンパンマン 3",
+      currentSeason: "Season 3",
+      episodeCount: 24,
+      durationTime: 24,
+      genre: ["Action", "Adventure", "Slice of Life"],
+    },
+    {
+      image:
+        "https://cdn.myanimelist.net/images/anime/1141/142503.jpg",
+      englishTitle: "Naruto",
+      japaneseTitle: "ナルト",
+      currentSeason: "Season 1",
+      episodeCount: 24,
+      durationTime: 24,
+      genre: ["Action", "Adventure", "Slice of Life"],
+    },
+    
+  ]);
   const selectedFilters = ["Newest", "Adventure", "Subtitle"];
   const selectedGenre = ["Action", "Adventure", "Slice of Life"];
 
@@ -30,99 +84,23 @@ const Anime = () => {
 
                 <div className="flex flex-col w-full gap-4">
                   <div className="flex flex-row justify-between items-center gap-4 overflow-auto no-scrollbar">
-                    <AnimeCard
-                      animeCover="/images/anime-cover.jpg"
-                      englishTitle="Demon Slayer"
-                      japaneseTitle="Kimetsu No Yaiba"
-                      currentSeason="Season 1"
-                      episodeCount="24 Episodes"
-                      durationTime="24 Mins"
-                      selectedGenre={selectedGenre}
-                    />
-                    <AnimeCard
-                      animeCover="/images/anime-cover.jpg"
-                      englishTitle="Demon Slayer"
-                      japaneseTitle="Kimetsu No Yaiba"
-                      currentSeason="Season 1"
-                      episodeCount="24 Episodes"
-                      durationTime="24 Mins"
-                      selectedGenre={selectedGenre}
-                    />
-                    <AnimeCard
-                      animeCover="/images/anime-cover.jpg"
-                      englishTitle="Demon Slayer"
-                      japaneseTitle="Kimetsu No Yaiba"
-                      currentSeason="Season 1"
-                      episodeCount="24 Episodes"
-                      durationTime="24 Mins"
-                      selectedGenre={selectedGenre}
-                    />
-                    <AnimeCard
-                      animeCover="/images/anime-cover.jpg"
-                      englishTitle="Demon Slayer"
-                      japaneseTitle="Kimetsu No Yaiba"
-                      currentSeason="Season 1"
-                      episodeCount="24 Episodes"
-                      durationTime="24 Mins"
-                      selectedGenre={selectedGenre}
-                    />
-                    <AnimeCard
-                      animeCover="/images/anime-cover.jpg"
-                      englishTitle="Demon Slayer"
-                      japaneseTitle="Kimetsu No Yaiba"
-                      currentSeason="Season 1"
-                      episodeCount="24 Episodes"
-                      durationTime="24 Mins"
-                      selectedGenre={selectedGenre}
-                    />
+                    {animeList.map((anime) => {
+                      return (
+                        <AnimeCard
+                          animeCover={anime.image}
+                          englishTitle={anime.englishTitle}
+                          japaneseTitle={anime.japaneseTitle}
+                          currentSeason={anime.currentSeason}
+                          episodeCount={anime.episodeCount}
+                          durationTime={anime.durationTime}
+                          selectedGenre={anime.genre}
+                        />
+                      );
+                    })}
                   </div>
 
                   <div className="flex flex-row justify-between items-center w-full gap-4 overflow-auto no-scrollbar">
-                    <AnimeCard
-                      animeCover="/images/anime-cover.jpg"
-                      englishTitle="Demon Slayer"
-                      japaneseTitle="Kimetsu No Yaiba"
-                      currentSeason="Season 1"
-                      episodeCount="24 Episodes"
-                      durationTime="24 Mins"
-                      selectedGenre={selectedGenre}
-                    />
-                    <AnimeCard
-                      animeCover="/images/anime-cover.jpg"
-                      englishTitle="Demon Slayer"
-                      japaneseTitle="Kimetsu No Yaiba"
-                      currentSeason="Season 1"
-                      episodeCount="24 Episodes"
-                      durationTime="24 Mins"
-                      selectedGenre={selectedGenre}
-                    />
-                    <AnimeCard
-                      animeCover="/images/anime-cover.jpg"
-                      englishTitle="Demon Slayer"
-                      japaneseTitle="Kimetsu No Yaiba"
-                      currentSeason="Season 1"
-                      episodeCount="24 Episodes"
-                      durationTime="24 Mins"
-                      selectedGenre={selectedGenre}
-                    />
-                    <AnimeCard
-                      animeCover="/images/anime-cover.jpg"
-                      englishTitle="Demon Slayer"
-                      japaneseTitle="Kimetsu No Yaiba"
-                      currentSeason="Season 1"
-                      episodeCount="24 Episodes"
-                      durationTime="24 Mins"
-                      selectedGenre={selectedGenre}
-                    />
-                    <AnimeCard
-                      animeCover="/images/anime-cover.jpg"
-                      englishTitle="Demon Slayer"
-                      japaneseTitle="Kimetsu No Yaiba"
-                      currentSeason="Season 1"
-                      episodeCount="24 Episodes"
-                      durationTime="24 Mins"
-                      selectedGenre={selectedGenre}
-                    />
+                    
                   </div>
                 </div>
               </div>

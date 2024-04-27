@@ -3,8 +3,8 @@ interface Props {
   englishTitle: string;
   japaneseTitle: string;
   currentSeason: string;
-  episodeCount: string;
-  durationTime: string;
+  episodeCount: number;
+  durationTime: number;
   selectedGenre?: string[];
 }
 
@@ -37,9 +37,9 @@ const AnimeCard = ({
         <div className="flex flex-row justify-between items-center text-[12px] font-normal w-full gap-4">
           <p>{currentSeason}</p>
           <div className="min-w-[6px] h-[6px] rounded-full bg-[#343333]"></div>
-          <p>{episodeCount}</p>
+          <p>{episodeCount} Episodes</p>
           <div className="min-w-[6px] h-[6px] rounded-full bg-[#343333]"></div>
-          <p className="truncate">{durationTime}</p>
+          <p className="truncate">{durationTime} Mins</p>
         </div>
 
         <div className="flex flex-row justify-between items-center w-full gap-2 text-[11px]">
