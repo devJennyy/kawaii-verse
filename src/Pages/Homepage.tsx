@@ -67,7 +67,7 @@ const Homepage = () => {
                   </span>
                 </p>
 
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center text-white">
                   <TypewriterEffectSmooth words={words} />
                 </div>
               </div>

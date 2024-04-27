@@ -83,7 +83,7 @@ function App() {
         </div>
       </div>
 
-      {/* Main Container */}
+      {/* Routes */}
       <div className="max-w-[1500px] mx-auto h-fit flex flex-col bg-[#09090B] text-white">
         <div className="w-full h-fit">
           <Routes>
